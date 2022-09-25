@@ -6,8 +6,8 @@ import 'package:veterinary_clinic_app/src/views/splash/splash_screen.dart';
 
 void main() {
   runApp(const SplashScreen());
-  // Timer(
-  //   const Duration(milliseconds: 5 * 1000),
-  //   () => runApp(const MainScreen()),
-  // );
+  Timer(
+    const Duration(milliseconds: 5 * 1000),
+    () => runApp(const MainScreen()),
+  );
 }

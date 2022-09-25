@@ -14,6 +14,8 @@ class SubTitle extends StatelessWidget {
       style: TextStyle(
         color: AppColorScheme.black,
         fontSize: FontSizes.splashSubTitle,
+        fontFamily: "Jost",
+        fontWeight: FontWeight.w500,
       ),
     );
   }

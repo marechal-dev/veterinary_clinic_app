@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:veterinary_clinic_app/src/theme/colors.dart';
-import 'package:veterinary_clinic_app/src/theme/font_sizes.dart';
 
-class MainTitle extends StatelessWidget {
+class SectionTitle extends StatelessWidget {
   final String text;
 
-  const MainTitle({super.key, required this.text});
+  const SectionTitle({super.key, required this.text});
 
   @override
   Widget build(BuildContext context) {
     return Text(
       text,
+      textAlign: TextAlign.start,
       style: TextStyle(
         color: AppColorScheme.black,
-        fontSize: FontSizes.splashTitle,
         fontFamily: "Jost",
-        fontWeight: FontWeight.bold,
+        fontSize: 14,
+        fontWeight: FontWeight.w500,
       ),
-      textAlign: TextAlign.center,
     );
   }
 }

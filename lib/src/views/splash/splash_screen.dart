@@ -14,20 +14,17 @@ class SplashScreen extends StatelessWidget {
         backgroundColor: AppColorScheme.brightGreen,
         body: Container(
           alignment: Alignment.bottomCenter,
-          padding: const EdgeInsets.only(
-            left: 15,
-            right: 15,
-            bottom: 13,
-          ),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              const MainTitle(text: "勇敢な友達"),
+              const Center(
+                child: MainTitle(text: "勇敢な友達"),
+              ),
               Padding(
                 padding: const EdgeInsets.only(
                   top: 31.88,
-                  left: 60,
+                  left: 75,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -36,15 +33,23 @@ class SplashScreen extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                  right: 28,
+                  right: 46,
                   bottom: 8.0,
+                  left: 15,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: const <Widget>[SubTitle(text: "friends")],
                 ),
               ),
-              Image.asset('assets/images/dog.png'),
+              Padding(
+                padding: const EdgeInsets.only(bottom: 13),
+                child: Image.asset(
+                  "assets/images/dog.png",
+                  alignment: Alignment.bottomRight,
+                  semanticLabel: "Doggo",
+                ),
+              )
             ],
           ),
         ),
